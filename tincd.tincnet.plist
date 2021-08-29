@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>KeepAlive</key>
+    <true/>
+    <key>Label</key>
+    <string>tinc.tincnet</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/sbin/tincd</string>
+        <string>-n</string>
+        <string>tincnet</string>
+        <string>-D</string>
+        <string>--pidfile=/usr/local/var/run/tinc.tincnet.pid</string>
+    </array>
+    <key>StandardErrorPath</key>
+    <string>/tmp/tinc.tincnet.err</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/tinc.tincnet.out</string>
+</dict>
+</plist>
