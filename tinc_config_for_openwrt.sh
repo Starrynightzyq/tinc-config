@@ -120,6 +120,6 @@ done
 tinc -n $net_name generate-rsa-keys 4096
 
 echo "done"
-echo "start command: tincd -n netname"
-echo "stop command: tincd -n netname -k"
-echo "use systemctl enable tinc@netname to enable individual networks"
+echo "start command: /etc/init.d/tinc start"
+echo "stop command: /etc/init.d/tinc stop"
+echo "use /etc/init.d/tinc enable to enable individual networks"
