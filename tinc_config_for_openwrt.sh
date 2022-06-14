@@ -118,6 +118,7 @@ done
 
 # tincd -n $net_name -K 4096
 tinc -n $net_name generate-rsa-keys 4096
+tinc -n tincnet generate-ed25519-keys
 
 echo "done"
 echo "start command: /etc/init.d/tinc start"
